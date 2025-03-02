@@ -1,12 +1,69 @@
-# React + Vite
+# Todo List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, minimalist Todo List application built with React and Vite.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Add new tasks to your todo list
+- Mark tasks as completed with a visual indicator
+- Delete tasks you no longer need
+- Persistent storage using localStorage
+- Clean, modern UI
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React 19
+- Vite 6
+- JavaScript (ES6+)
+- CSS3
+- Local Storage API for data persistence
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/todo-list-app.git
+cd todo-list-app
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+```
+
+4. Build for production:
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+todo-list-app/
+├── public/              # Static assets
+├── src/
+│   ├── Components/      # React components
+│   │   ├── Assets/      # Component-specific assets
+│   │   ├── CSS/         # Component styles
+│   │   ├── Todo.jsx     # Main Todo component
+│   │   └── TodoItems.jsx # Individual todo item component
+│   ├── App.jsx          # Root component
+│   ├── main.jsx         # Entry point
+│   └── index.css        # Global styles
+├── index.html           # HTML template
+└── vite.config.js       # Vite configuration
+```
+
+## Future Improvements
+
+- Add task categories/tags
+- Implement drag-and-drop reordering
+- Add due dates and reminders
+- Create filter options (All, Active, Completed)
+- Add dark/light theme toggle
